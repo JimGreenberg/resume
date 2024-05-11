@@ -4,23 +4,12 @@
       size: letter portrait;
     }
     @media print {
-      .guideline {
-        display: none;
+      article {
+        border: unset !important;
       }
-    }
-    .guideline {
-      border: 1px solid red;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 8.5in;
-      height: 11in;
-      pointer-events: none;
     }
     body {
       font-family: "Droid sans", sans-serif;
-
-      /* size: letter portrait; */
       margin: 0;
     }
     article {
@@ -28,6 +17,8 @@
       color: #262a25;
       width: 8.5in;
       height: 11in;
+      padding: 0.35in 0.25in 0.25in;
+      border: 1px solid red;
     }
     h1 {
       font-size: 2.5rem;
@@ -276,5 +267,4 @@
       </section>
     </section>
   </article>
-  <div class="guideline"/>
 </body>
