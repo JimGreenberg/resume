@@ -1,0 +1,280 @@
+<head>
+  <style>
+    @page {
+      size: letter portrait;
+    }
+    @media print {
+      .guideline {
+        display: none;
+      }
+    }
+    .guideline {
+      border: 1px solid red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8.5in;
+      height: 11in;
+      pointer-events: none;
+    }
+    body {
+      font-family: "Droid sans", sans-serif;
+
+      /* size: letter portrait; */
+      margin: 0;
+    }
+    article {
+      background: white;
+      color: #262a25;
+      width: 8.5in;
+      height: 11in;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 0.2em;
+    }
+    h2,
+    h3 {
+      font-size: 1rem;
+      margin: 0.75em 0 0.25em;
+    }
+    h2 > *,
+    h3 {
+      font-weight: 500;
+    }
+    section section,
+    ul {
+      padding-left: 0.25in;
+    }
+    /* hacks */
+    section section ul {
+      padding: 0;
+    }
+    section section h3 {
+      margin-left: -0.05in;
+    }
+
+    .pipe {
+      color: #bababa;
+      margin: 0 0.25em;
+    }
+    .chip {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.4em 1em;
+      vertical-align: middle;
+      font-size: 0.5em;
+      font-weight: 300;
+      line-height: 0.9em;
+      background: #bababa;
+      color: white;
+
+    }
+    p,
+    small,
+    span,
+    li {
+      font-size: 0.8rem;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    ul {
+      list-style: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%222%202%2020%2020%22%3E%3Cpath%20%20d%3D%22M21.87%2C19.29l-9-15.58a1%2C1%2C0%2C0%2C0-1.74%2C0l-9%2C15.58a1%2C1%2C0%2C0%2C0%2C0%2C1%2C1%2C1%2C0%2C0%2C0%2C.87.5H21a1%2C1%2C0%2C0%2C0%2C.87-.5A1%2C1%2C0%2C0%2C0%2C21.87%2C19.29Zm-17.14-.5L12%2C6.21l7.27%2C12.58Z%22%2F%3E%3C%2Fsvg%3E");
+      list-style-position: inside;
+      margin: 0;
+    }
+    li::marker {
+      font-size: 1.2rem;
+      color: gray;
+      /* font-size: 6; */
+      /* content: "△"; */
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Jim Greenberg</h1>
+    <small>
+      Carnegie Mellon University
+      <span class="pipe">|</span>
+      Class of 2015
+    </small>
+    <br />
+    <small>
+      <a href="mailto:greenjberg@gmail.com">greenjberg@gmail.com</a>
+      <span class="pipe">|</span>
+      <a href="github.com/JimGreenberg"> github.com/JimGreenberg</a>
+      <span class="pipe">|</span>
+      <a href="linkedin.com/in/james-greenberg">
+        linkedin.com/in/james-greenberg
+      </a>
+    </small>
+    <section>
+      <h3>Technical Skills</h3>
+      <small
+        >TypeScript, Python, Amazon Web Services (AWS), Angular, CSS/SCSS,
+        Firebase, Flask, Git, HTML, JavaScript, Jest, Linux, Microservice
+        Architecture, Material Design, MongoDB, Node.js, OpenAPI, Polymer,
+        Pubsub, Pydantic, React, React Native, Redis, Regex, SIP, SQL,
+        WebComponents, Adobe Creative Suite: Photoshop, Illustrator</small
+      >
+    </section>
+    <section>
+      <h2>
+        Nomad Health
+          <span class="chip">Staff Software Engineer</span>
+          <!-- <span class="pipe">|</span> -->
+          <span class="chip">August 2021 - Current</span>
+      </h2>
+      <ul>
+        <li>
+          Tech lead and mentor for a team of 5 full time engineers and
+          contractors
+        </li>
+        <li>
+          Co-lead on design system initiative to develop a company-wide
+          framework for best-practice frontend code
+        </li>
+        <li>
+          Authored platform-wide improvements and conventions for multiple
+          TypeScript codebases, recognized as SME for the language
+        </li>
+        <li>
+          Active member of the Architecture Committee, which handles
+          collaborating on global engineering initiatives such as best practices
+          for unit testing and analytics, future platform improvements and more
+        </li>
+      </ul>
+      <section>
+        <h3>Credentialing System</h3>
+        <ul>
+          <li>
+            Chief contributor and tech lead for a 0 to 1 in-product solution for
+            collecting user credential documents.
+          </li>
+          <li>
+            Implemented a dynamic, JSON Schema-driven document collection
+            system, including full UX flows for both end-users and internal
+            operations specialists, database and API design as well as
+            implemented external communications to end-users with 3rd party
+            integrations
+          </li>
+          <li>
+            Directly improved business metrics: Transformed a previously
+            all-manual workflow to be 80% automated. More than doubled
+            operations per-head file handling efficiency. Reduced credentialing
+            time by an average of 1 week and added new ability to “quick start”.
+            Increased overall on-time starts by 20% and reduced closed
+            unresponsive applications by 33%
+          </li>
+          <li>
+            Supported multiple other teams on architecture for integrations and
+            extensions into the system; wrote and maintained extensive
+            documentation for the system for engineering, product, and
+            operations audiences
+          </li>
+        </ul>
+      </section>
+      <h3>Nurse Job Offers Experience</h3>
+      <ul>
+        <li>
+          Advised and mentored individual front and backend project leads as the
+          team tech lead on architecture, implementation, and product concerns
+        </li>
+        <li>
+          Refactored legacy feature-locked Zendesk integration into a more
+          sustainable and generic implementation
+        </li>
+      </ul>
+      </section>
+    </section>
+    <section>
+      <h2>
+        Intrado
+
+          <span class="chip">Director of Software Engineering</span>
+          <!-- <span class="pipe">|</span> -->
+          <span class="chip">Acquired August 2020</span>
+      </h2>
+      <ul>
+        <li>
+          Managed a multi-talented team of 9 engineers spanning the full stack;
+          hiring manager for 4 roles
+        </li>
+        <li>
+          Leadership role in the integration of a $7MM contact center product
+          into our $14MM UCaaS platform
+        </li>
+        <li>
+          Primary project driver for porting a Ruby on Rails feature-rich
+          administrator portal to our Angular app
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>
+        OnSIP
+        <span class="chip">Lead Frontend Engineer</span>
+          <!-- <span class="pipe">|</span> -->
+          <span class="chip">Hire date June 2017</span>
+      </h2>
+      <ul>
+        <li>
+          Hired, onboarded, mentored, and oversaw a team of 4 junior engineers
+        </li>
+        <li>
+          Ran Agile meetings, including sprint planning and retros as well as
+          code reviews in both pair-programming and asynchronous styles
+        </li>
+        <li>
+          Maintainer and gatekeeper of a TypeScript Angular project consisting
+          of multiple apps for web and desktop (Electron) releases
+        </li>
+      </ul>
+      <section>
+        <h3>OnSIP Web and Desktop App</h3>
+        <ul>
+          <li>
+            Drove 2 year growth from 5,016 to 12,136 unique logins driving 1-week
+            user retention from 4.43% to 9.34%
+          </li>
+          <li>
+            Primary architect, author, and maintainer of a novel in-house generic
+            state management system using conventions from React Flux/Redux
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Sayso chat solution</h3>
+        <ul>
+          <li>
+            Primary architect and code author of a real time website chat solution
+          </li>
+          <li>
+            Collaborated on the creation of a Firebase backend and AWS S3 based
+            CDN to deliver a lightweight and lazy-loaded Web Components payload
+          </li>
+          <li>
+            Maintained a Selenium-based nightly testing suite run with SauceLabs
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>
+          SIP.js
+          <span>(open source <a href="https://github.com/onsip/SIP.js">GitHub</a>)</span>
+        </h3>
+        <ul>
+          <li>
+            Implemented the WebRTC RTCRtpSender API to add RFC 2833-compliant
+            in-band DTMF input
+          </li>
+          <li>Authored an extensible transport layer and public API</li>
+        </ul>
+      </section>
+    </section>
+  </article>
+  <div class="guideline"/>
+</body>
