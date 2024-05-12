@@ -5,7 +5,8 @@
     }
     @media print {
       article {
-        border: unset !important;
+        box-shadow: unset !important;
+        margin: unset !important;
       }
     }
     body {
@@ -18,7 +19,9 @@
       width: 8.5in;
       height: 11in;
       padding: 0.35in 0.25in 0.25in;
-      border: 1px solid red;
+      margin: 2em auto;
+      box-shadow: 4px 5px 15px 5px #bababa;
+      border-radius: 4px;
     }
     h1 {
       font-size: 2.5rem;
@@ -35,8 +38,9 @@
       font-weight: 500;
     }
     section section,
-    ul {
-      padding-left: 0.25in;
+    ul,
+    section > small {
+      padding-left: 0.15in;
     }
     /* hacks */
     section section ul {
@@ -60,15 +64,17 @@
       line-height: 0.9em;
       background: #bababa;
       color: white;
-
     }
     p,
     small,
     span,
-    li {
+    li,
+    p {
       font-size: 0.8rem;
     }
-    li {
+    li,
+    p {
+      margin-top: 0;
       margin-bottom: 0.5em;
     }
     ul {
@@ -81,6 +87,9 @@
       color: gray;
       /* font-size: 6; */
       /* content: "△"; */
+    }
+    ul.dense > * {
+      margin-bottom: 0.2em;
     }
   </style>
 </head>
@@ -104,90 +113,110 @@
     </small>
     <section>
       <h3>Technical Skills</h3>
-      <small
-        >TypeScript, Python, Amazon Web Services (AWS), Angular, CSS/SCSS,
-        Firebase, Flask, Git, HTML, JavaScript, Jest, Linux, Microservice
-        Architecture, Material Design, MongoDB, Node.js, OpenAPI, Polymer,
-        Pubsub, Pydantic, React, React Native, Redis, Regex, SIP, SQL,
-        WebComponents, Adobe Creative Suite: Photoshop, Illustrator</small
-      >
+      <ul class="dense">
+        <li>
+          <strong>Primary Languages</strong> TypeScript, Python, JavaScript
+        </li>
+        <li>
+          <strong>Frontend</strong> React, React Native, Angular, CSS/SCSS,
+          Design Systems, HTML, Jest, Material Design, Polymer, WebComponents
+        </li>
+        <li>
+          <strong>Backend</strong> Flask, Celery, Microservice Architecture,
+          Node.js, OpenAPI, Pubsub, Pydantic
+        </li>
+        <li>
+          <strong>Databases</strong> BigQuery, Elasticsearch, Firebase, MongoDB,
+          Redis, MySQL, PostgreSQL, SQL
+        </li>
+        <li>
+          <strong>Other</strong> Amazon Web Services (AWS), Google Cloud
+          Platform (GCP), Docker, Git, Kubernetes, Linux, Regex, SIP, Adobe
+          Creative Suite: Photoshop, Illustrator
+        </li>
+        <li><strong>3rd Party APIs</strong> Iterable, Slack, Zendesk</li>
+      </ul>
     </section>
     <section>
       <h2>
         Nomad Health
-          <span class="chip">Staff Software Engineer</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">August 2021 - Current</span>
+        <span class="chip">Staff Software Engineer</span>
+        <!-- <span class="pipe">|</span> -->
+        <span class="chip">August 2021 - Current</span>
       </h2>
       <ul>
         <li>
-          Tech lead and mentor for a team of 5 full time engineers and
-          contractors
-        </li>
-        <li>
           Co-lead on design system initiative to develop a company-wide
-          framework for best-practice frontend code
+          framework for best-practice frontend code as well as design and
+          marketing collaboration
         </li>
         <li>
           Authored platform-wide improvements and conventions for multiple
           TypeScript codebases, recognized as SME for the language
         </li>
-        <li>
-          Active member of the Architecture Committee, which handles
-          collaborating on global engineering initiatives such as best practices
-          for unit testing and analytics, future platform improvements and more
-        </li>
       </ul>
+      <section>
+        <h3>Search and Recommendations</h3>
+        <ul>
+          <p>
+            Lead and mentored a team of 6 seniors and juniors through several
+            successful projects:
+          </p>
+          <li>
+            <strong>Notifications Microservice</strong> Architected a highly
+            extensible microservice to orchestrate machine learning, rules
+            engine and user impression signals to drive fine-grain
+            recommendations messaging campaigns
+          </li>
+          <li>
+            <strong>Saved Search</strong> Drove a 0 to 1 implementation that
+            spanned from the design system to the database, including a
+            pubsub-based eventing pipeline for driving instant alerts over
+            email, SMS and push
+          </li>
+          <li>
+            <strong>Search UI Redesign</strong> Full reimplementation of main
+            user journey resulting in 12% increase in job viewed metrics. Laid
+            the foundation for future development across several frontend teams
+          </li>
+        </ul>
+      </section>
       <section>
         <h3>Credentialing System</h3>
         <ul>
           <li>
-            Chief contributor and tech lead for a 0 to 1 in-product solution for
+            Tech lead and chief contributor for a 0 to 1 in-product solution for
             collecting user credential documents.
           </li>
           <li>
-            Implemented a dynamic, JSON Schema-driven document collection
-            system, including full UX flows for both end-users and internal
-            operations specialists, database and API design as well as
-            implemented external communications to end-users with 3rd party
-            integrations
+            Implemented a document and structured data collection system
+            featuring a dynamic form driven by JSON Schema. Included full UX
+            flows for both end-users and internal operations specialists,
+            database and API design as well as external communications to
+            end-users with 3rd party integrations
           </li>
           <li>
             Directly improved business metrics: Transformed a previously
             all-manual workflow to be 80% automated. More than doubled
             operations per-head file handling efficiency. Reduced credentialing
-            time by an average of 1 week and added new ability to “quick start”.
-            Increased overall on-time starts by 20% and reduced closed
-            unresponsive applications by 33%
+            time by an average of 1 week. Increased overall on-time starts by
+            20% and reduced closed unresponsive applications by 33%
           </li>
-          <li>
+          <!-- <li>
             Supported multiple other teams on architecture for integrations and
             extensions into the system; wrote and maintained extensive
             documentation for the system for engineering, product, and
             operations audiences
-          </li>
+          </li> -->
         </ul>
-      </section>
-      <h3>Nurse Job Offers Experience</h3>
-      <ul>
-        <li>
-          Advised and mentored individual front and backend project leads as the
-          team tech lead on architecture, implementation, and product concerns
-        </li>
-        <li>
-          Refactored legacy feature-locked Zendesk integration into a more
-          sustainable and generic implementation
-        </li>
-      </ul>
       </section>
     </section>
     <section>
       <h2>
         Intrado
-
-          <span class="chip">Director of Software Engineering</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">Acquired August 2020</span>
+        <span class="chip">Director of Software Engineering</span>
+        <!-- <span class="pipe">|</span> -->
+        <span class="chip">Acquired August 2020</span>
       </h2>
       <ul>
         <li>
@@ -208,8 +237,8 @@
       <h2>
         OnSIP
         <span class="chip">Lead Frontend Engineer</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">Hire date June 2017</span>
+        <!-- <span class="pipe">|</span> -->
+        <span class="chip">Hire date June 2017</span>
       </h2>
       <ul>
         <li>
@@ -228,12 +257,13 @@
         <h3>OnSIP Web and Desktop App</h3>
         <ul>
           <li>
-            Drove 2 year growth from 5,016 to 12,136 unique logins driving 1-week
-            user retention from 4.43% to 9.34%
+            Drove 2 year growth from 5,016 to 12,136 unique logins driving
+            1-week user retention from 4.43% to 9.34%
           </li>
           <li>
-            Primary architect, author, and maintainer of a novel in-house generic
-            state management system using conventions from React Flux/Redux
+            Primary architect, author, and maintainer of a novel in-house
+            generic state management system using conventions from React
+            Flux/Redux
           </li>
         </ul>
       </section>
@@ -241,7 +271,8 @@
         <h3>Sayso chat solution</h3>
         <ul>
           <li>
-            Primary architect and code author of a real time website chat solution
+            Primary architect and code author of a real time website chat
+            solution
           </li>
           <li>
             Collaborated on the creation of a Firebase backend and AWS S3 based
@@ -255,7 +286,10 @@
       <section>
         <h3>
           SIP.js
-          <span>(open source <a href="https://github.com/onsip/SIP.js">GitHub</a>)</span>
+          <span>
+            (open source project
+            <a href="https://github.com/onsip/SIP.js">GitHub</a>)</span
+          >
         </h3>
         <ul>
           <li>
