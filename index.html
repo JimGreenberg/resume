@@ -1,5 +1,11 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       @page {
         size: letter portrait;
@@ -14,7 +20,7 @@
         font-size: 15px;
       }
       body {
-        font-family: "Droid sans", sans-serif;
+        font-family: "Lato", sans-serif;
         margin: 0;
       }
       article {
@@ -61,17 +67,6 @@
         color: #bababa;
         margin: 0 0.25em;
       }
-      .chip {
-        display: inline-block;
-        border-radius: 999px;
-        padding: 0.4em 1em;
-        vertical-align: middle;
-        font-size: 0.5em;
-        font-weight: 300;
-        line-height: 0.9em;
-        background: #bababa;
-        color: white;
-      }
       p,
       small,
       span,
@@ -104,12 +99,6 @@
     <article>
       <h1>Jim Greenberg</h1>
       <small>
-        Carnegie Mellon University
-        <span class="pipe">|</span>
-        Class of 2015
-      </small>
-      <br />
-      <small>
         <a href="mailto:greenjberg@gmail.com">greenjberg@gmail.com</a>
         <span class="pipe">|</span>
         <a href="github.com/JimGreenberg"> github.com/JimGreenberg</a>
@@ -118,40 +107,55 @@
           linkedin.com/in/james-greenberg
         </a>
       </small>
+      <br />
+      <small>
+        Carnegie Mellon University
+        <span class="pipe">|</span>
+        BS in Chemical Engineering
+        <span class="pipe">|</span>
+        Class of 2015
+      </small>
       <section>
         <h3>Technical Skills</h3>
         <ul class="dense">
           <li>
             <strong>Primary Languages</strong>
+            <span class="pipe">|</span>
             TypeScript, Python, JavaScript
           </li>
           <li>
             <strong>Frontend</strong>
+            <span class="pipe">|</span>
             React, React Native, Angular, CSS/SCSS, Design Systems, HTML, Jest,
             Material Design, Polymer, WebComponents
           </li>
           <li>
             <strong>Backend</strong>
+            <span class="pipe">|</span>
             Flask, Celery, Microservice Architecture, Node.js, OpenAPI, Pubsub,
             Pydantic
           </li>
           <li>
             <strong>Databases</strong>
+            <span class="pipe">|</span>
             BigQuery, Elasticsearch, Firebase, MongoDB, Redis, MySQL,
             PostgreSQL, SQL
           </li>
           <li>
             <strong>Infra</strong>
-            Amazon Web Services (AWS), Google Cloud Platform (GCP), Kubernetes,
-            Linux
+            <span class="pipe">|</span>
+            Amazon Web Services (AWS), Docker, Google Cloud Platform (GCP),
+            Kubernetes, Linux
           </li>
           <li>
             <strong>Other</strong>
-            Datadog, Docker, Git, Regex, SIP, Adobe Creative Suite: Photoshop,
+            <span class="pipe">|</span>
+            Datadog, Git, Regex, SIP, Adobe Creative Suite: Photoshop,
             Illustrator
           </li>
           <li>
             <strong>3rd Party APIs</strong>
+            <span class="pipe">|</span>
             Iterable, Slack, Zendesk
           </li>
         </ul>
@@ -159,13 +163,13 @@
       <section>
         <h2>
           Nomad Health
-          <span class="chip">Staff Software Engineer</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">August 2021 - Current</span>
+          <span>Staff Software Engineer</span>
+          <span class="pipe">|</span>
+          <span>August 2021 - Current</span>
         </h2>
         <ul>
           <li>
-            Co-lead on design system initiative to develop a company-wide
+            Lead design system initiative and helped develop a company-wide
             framework for best-practice frontend code as well as design and
             marketing collaboration
           </li>
@@ -191,12 +195,13 @@
               <strong>Saved Search</strong> Drove a 0 to 1 implementation that
               spanned from the design system to the database, including a
               pubsub-based eventing pipeline for driving instant alerts over
-              email, SMS and push
+              email, SMS and push. Resulted in 10.5% conversion up from 5.2%
             </li>
             <li>
               <strong>Search UI Redesign</strong> Full reimplementation of main
-              user journey resulting in 12% increase in job views. Laid the
-              foundation for future development across several frontend teams
+              user journey resulting in 25% increase in job views and 20%
+              increase in application completions. Laid the foundation for
+              future development across several frontend teams
             </li>
           </ul>
         </section>
@@ -233,9 +238,9 @@
       <section>
         <h2>
           Intrado
-          <span class="chip">Director of Software Engineering</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">Acquired August 2020</span>
+          <span>Director of Software Engineering</span>
+          <span class="pipe">|</span>
+          <span>August 2020 - August 2021</span>
         </h2>
         <ul>
           <li>
@@ -255,9 +260,9 @@
       <section>
         <h2>
           OnSIP
-          <span class="chip">Lead Frontend Engineer</span>
-          <!-- <span class="pipe">|</span> -->
-          <span class="chip">Hire date June 2017</span>
+          <span>Lead Frontend Engineer</span>
+          <span class="pipe">|</span>
+          <span>June 2017 - Acquired by Intrado August 2020</span>
         </h2>
         <ul>
           <li>
